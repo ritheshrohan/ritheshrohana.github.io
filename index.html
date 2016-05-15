@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="portfolioApp">
+<head>
+  <title>Rithesh Rohan</title>
+  <meta charset="utf-8">
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--CSS  -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animate.css">
+
+  <!-- Scripts -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="js/bower_components/angular/angular.js"></script>
+  <script src="js/bower_components/angular-animate/angular-animate.js"></script>
+  <script src="js/bower_components/angular-route/angular-route.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/jquery.teletype.min.js"></script>
+  <script type="text/javascript" src="js/controllers/indexCtrl.js"></script>
+  <script type="text/javascript" src="js/controllers/aboutCtrl.js"></script>
+  <script type="text/javascript" src="js/controllers/contactCtrl.js"></script>
+</head>
+<body >
+
+<!-- Start of bottom navbar section -->
+
+<nav class="navbar navbar-default navbar-fixed-bottom animated slideInUp" data-toggle-duration="4s" ng-controller="indexController">
+
+    <ul class="nav navbar-nav" >
+      <li ng-repeat="section in array"><a href="#/{{section.url}}">{{section.name}}</a></li>
+    </ul>
+
+</nav>
+
+<!-- End of bottom navbar -->
+
+<!-- Views to be added -->
+<div data-ng-view>
+</div>
+
+</body>
+</html>
