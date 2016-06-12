@@ -10,6 +10,10 @@ body{
   padding-bottom: 2%;
   border: 2px solid #ddd;
 }
+.hrCss{
+  margin-left:2.5%;
+   margin-right:2.5%;
+}
 .innerCont:hover{
   transform:translateY(-2px);
   -webkit-box-shadow: 0px 0px 13px -3px rgba(0,0,0,0.75);
@@ -51,13 +55,35 @@ h3{
   margin-right: 4.5%;
   border-bottom: 2px solid #ddd;
 }
+/*MOBILE DEVICES -----CSS*/
+
+@media (max-width: 480px) {
+h3{
+  line-height: 1em;
+  text-align: center;
+  margin-top: 0px;
+  border-bottom: 0px;
+}
+.outerCont{
+margin: 10%;
+}
+.hrCss{
+  display: none;
+}
+
+.navbar-fixed-bottom{
+  border-top: 2px solid #ddd;
+}
+}
+
+
 </style>
 <br />
-<div class="row animated fadeInDown ">
+<div class="row animated fadeInDown">
 <h3 style="padding-bottom:0px; margin-bottom:0px;">Portfolio </h3>
 </div>
 <div class="row padd animated fadeInDown">
-      <div class="col-md-3 outerCont">
+      <div class="col-md-3 outerCont" style="margin-top:5%;">
 
           <div class="innerCont">
             <a href="http://79.170.44.118/ritheshrohan.com/twitteroauth/twitter.php">
@@ -173,7 +199,7 @@ h3{
 
 </div>
 
-<hr style="margin-left:2.5%; margin-right:2.5%;"/>
+<hr class="hrCss"/>
 <br />
 <br />
 <br /><br />

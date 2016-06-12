@@ -9,12 +9,56 @@ h3{
   border-bottom: 2px solid #ddd;
 }
 
+@media (max-width: 480px) {
+
+  .headContainer{
+position:relative;
+    display:block;
+  }
+
+  .headItem{
+    display: block;
+    text-align: left;
+  }
+
+  h3{
+    text-align: center;
+    margin-top: 4%;
+    padding-left: 0%;
+    padding-bottom: 4%;
+    border-bottom: 2px solid #ddd;
+  }
+
+  ul{
+    margin-top: 5%;
+  }
+
+.paddleft{
+  padding-left: 0%;
+  }
+
+  .navbar-fixed-bottom{
+    border-top: 2px solid #ddd;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .bg{
+  text-align: center;
+  font-size: 1.4em;
+  }
+
+  ul.nav.navbar-nav{
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+}
 </style>
 <div class="headContainer" ng-controller="workController">
   <div class="headItem">
     <div class="row">
       <div class="col-md-6 paddleft animated fadeInDown">
-
           <h3>Internships</h3>
           <div class="col-md-6">
             <ul>
@@ -55,7 +99,7 @@ h3{
           </div>
 
       </div>
-      <div class="col-md-6 animated fadeInDown">
+      <div class="col-md-6 animated fadeInDown addBotMarg">
         <div class="paddDescrip">
             <a href="#/portfolio">
               <h2 class="bg">Portfolio</h2>

@@ -1,0 +1,43 @@
+
+/*MOBILE PHONES - CSS ------------------------------------------------------*/
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .navbar-nav{
+  margin: 0px;
+}
+.navbar-fixed-bottom{
+  margin-bottom: 1%;
+  margin-top: 2%;
+}
+.small{
+    max-height: 100px;
+}
+
+.small1{
+    margin-top: 5%;
+    max-height: 100px;
+}
+
+.navbar-nav {
+    width: 100%;
+    text-align: center;
+  }
+
+.navbar-nav li {
+      display: default;
+      padding: 0px 0px 0px 0px;
+    }
+
+.paddDescrip{
+    font-size:1em;
+    max-width: 100%;
+     text-align:justify;
+     font-weight: 200;
+    }
+
+.addBotMarg{
+  margin-bottom: 10%;
+}
+
+}
